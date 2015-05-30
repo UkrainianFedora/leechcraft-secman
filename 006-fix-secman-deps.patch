@@ -1,0 +1,10 @@
+diff --git src/plugins/secman/plugins/simplestorage/CMakeLists.txt src/plugins/secman/plugins/simplestorage/CMakeLists.txt
+index 2a3dc71..3d050e1 100644
+--- src/plugins/secman/plugins/simplestorage/CMakeLists.txt
++++ src/plugins/secman/plugins/simplestorage/CMakeLists.txt
+@@ -18,4 +18,4 @@ target_link_libraries (leechcraft_secman_simplestorage
+ 	)
+ install (TARGETS leechcraft_secman_simplestorage DESTINATION ${LC_PLUGINS_DEST})
+ 
+-FindQtLibs (leechcraft_secman_simplestorage Core)
++FindQtLibs (leechcraft_secman_simplestorage Core Widgets)
