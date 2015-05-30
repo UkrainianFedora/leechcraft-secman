@@ -9,7 +9,7 @@
 Name:           leechcraft-secman
 Summary:        Securyty & Personal Data Manager for LeechCraft
 Version:        0.6.75
-Release:        1%{?dist}
+Release:        2%{?dist}
 License:        GPLv2+
 Url:            http://leechcraft.org
 Source0:        http://dist.leechcraft.org/LeechCraft/%{version}/leechcraft-0.6.70-%{git_version}.tar.xz
@@ -20,6 +20,7 @@ Patch6:         006-fix-secman-deps.patch
 BuildRequires: cmake
 BuildRequires: boost-devel
 BuildRequires: qt5-qtbase-devel
+BuildRequires: qt5-qtwebkit-devel
 BuildRequires: qt5-qtx11extras-devel
 BuildRequires: qt5-qttools-devel
 BuildRequires: bzip2-devel
@@ -82,7 +83,7 @@ popd
 %{_includedir}/%{product_name}/*
 
 %changelog
-* Sat May 30 2015 Minh Ngo <minh@fedoraproject.org> - 0.6.75-1
+* Sat May 30 2015 Minh Ngo <minh@fedoraproject.org> - 0.6.75-2
 - 0.6.75-1, Qt5
 
 * Fri Dec 26 2014 Minh Ngo <minh@fedoraproject.org> - 0.6.70-1
