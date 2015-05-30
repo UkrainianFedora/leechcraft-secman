@@ -6,8 +6,8 @@
 %define git_version 3466-g864bd1a
 %global optflags %(echo %{optflags} | sed 's/-D_FORTIFY_SOURCE=2 //')
 
-Name:           leechcraft-bittorrent
-Summary:        BitTorrent Client for LeechCraft
+Name:           leechcraft-secman
+Summary:        Securyty & Personal Data Manager for LeechCraft
 Version:        0.6.75
 Release:        1%{?dist}
 License:        GPLv2+
